@@ -1,0 +1,1 @@
+codex mcp logout supabase organizations:read,projects:read,projects:write,database:read,database:write,analytics:read,secrets:read,edge_functions:read,edge_functions:write,environment:read,environment:write,storage:read,storage:write
