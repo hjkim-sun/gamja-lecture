@@ -1,7 +1,7 @@
 ---
 name: sdd-tdd-development
 description: >-
-  This is a procedural guide for developing software using TDD (Test-Driven Development) with OrcaOrchestration.
+  This is a procedural guide for developing software using SDD & TDD (Test-Driven Development) with OrcaOrchestration.
   It describes the orchestration workflow between the Designer Worker, Tester Worker, and Developer Worker.
   Load this skill when the user requests new feature development or complex modifications to existing functionality.
 ---
@@ -11,13 +11,13 @@ sdd(스펙 주도 개발) 과 tdd (테스트 주도 개발)을 위해 orca orche
 
 # 패턴 유형
 ## 기본 개발 패턴
-설계 문서를 생성해야 하는 경우 또는 설계가 크게 바뀌는 경우 적용하며 단순한 수정 건에는 designer worker, 또는 tester worker는 생략한다.
+설계 문서를 생성해야 하는 경우 또는 설계가 크게 바뀌는 경우 적용하며 단순한 수정 건에는 designer worker, tester worker, ui tester는 생략한다.
 
 1. 생성할 워커
  - designer worker
  - tester worker (RED 케이스 생성)
- - backoend developer worker
- - front develop worker
+ - backend worker
+ - front worker
  - ui tester
 
 2. 작업 순서
@@ -34,5 +34,5 @@ orchestrator > designer > 사람 검토 > tester > [backend, front] > ui tester
 
 
 # Must to do(Orchestrator)
-1. 각 터미널의 명칭으로 워커의 이름을 지정해준다. (ex: designer worker: designer, backend develop worker: backend)
+1. 각 터미널의 명칭으로 워커의 이름을 지정해준다. (ex: designer worker: designer, backend worker: backend)
 2. 워커 터미널 작업이 종료되어도 터미널을 닫지 않는다. 
