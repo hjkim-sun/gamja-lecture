@@ -28,10 +28,10 @@ orchestrator &gt; designer &gt; 사람 검토 &gt; tester &gt; \[backend, front\
 # 워커 에이전트 유형 및 사고 수준 정의
 
 1. designer worker: --agent claude --model opus --effort high
-2. tester worker: --agent codex --model gpt-5.6-sol --effort high
-3. backend worker: --agent codex --model gpt-5.6-terra --effort high
+2. tester worker: --agent codex --model gpt-6-luna --effort high
+3. backend worker: --agent codex --model gpt-6-luna--effort high
 4. front worker: --agent claude --model sonnet --effort high
-5. ui worker: --agent codex --model gpt-5.6-terra --effort high
+5. ui worker: --agent codex --model sonnet --effort high
 
 # Must to do(Orchestrator)
 
