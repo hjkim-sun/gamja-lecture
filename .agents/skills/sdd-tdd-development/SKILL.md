@@ -38,7 +38,7 @@ orchestrator &gt; designer &gt; 사람 검토 &gt; tester &gt; \[backend, front\
 1. 각 터미널의 명칭으로 워커의 이름을 지정해준다. (ex: designer worker: designer, backend worker: backend)
 2. 워커 터미널 작업이 종료되어도 터미널을 닫지 않는다.
 3. 개발 작업 후 모든 검증 작업이 완료되면 작업 워크트리에서 commit 을 수행하고 develop 브랜치로 pr을 작성한다. 
-4. orca orchestration run-creat 명령을 할 때에는 --term 인자를 반드시 작성한다. 
+4. orca orchestration run-create 명령을 할 때에는 --from 인자를 반드시 작성한다. 
 
 # Must do to(Worker)
 
