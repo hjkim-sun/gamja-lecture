@@ -39,3 +39,20 @@ docs/
 
 ## 설계문서 저장
 docs/specs 디렉토리안에 구현 단계별로 순번을 붙여 md 파일로 저장한다.
+
+## 스킬 사용
+프론트엔드 개발 및 백엔드 개발이 진행되는 경우 sdd-tdd-development 스킬을 사용한다.
+
+## 검증 방법
+개발 환경에서 검증을 수행할 때는 로컬 DB를 그대로 활용하며 검증 DB는 새로 만들지 않는다. 
+검증했던 DB데이터는 삭제하지 않고 그대로 보존한다. 
+
+## PR 처리 지침 
+develop/master 브랜치로 pr merge를 수행할 때는 `pr-merge`스킬을 사용한다. 
+
+## 컨텍스트 압축을 위한 지침
+컨텍스트가 압축될 경우에 대비하여 모든 터미널은 자신의 터미널 ID를 이용하여 _workspace/yyyy-mm-dd/{terminalId} 디렉토리를 생성한다.  
+그리고 모든 터미널은 작업 시작시 GOAL.md를 저장한다. 
+또한 주요 진행상황 또는 Orca Orchestration 관련 중요 정보가 있을 때마다 PROGRESS.md에 진행 상황을 기록한다.
+압축이 완료되면 GOAL.md 및 PROGRESS.md 를 가장 먼저 읽는다. 
+
